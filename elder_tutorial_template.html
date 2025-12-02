@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial for Elders - [Insert Topic Here]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 22px;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .header {
+            background-color: #307e4e;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            margin: -30px -30px 30px -30px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .step {
+            background-color: #e1f4e4;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border-left: 5px solid #307e4e;
+        }
+
+        .step h2 {
+            margin-top: 0;
+            font-size: 28px;
+            color: #307e4e;
+        }
+
+        .step p {
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .input-field {
+            width: 100%;
+            max-width: 500px;
+            font-size: 18px;
+            padding: 12px;
+            height: 45px;
+            border: 2px solid #307e4e;
+            border-radius: 5px;
+            margin: 15px 0;
+            box-sizing: border-box;
+        }
+
+        .button {
+            background-color: #307e4e;
+            color: white;
+            font-size: 18px;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            margin: 10px 5px;
+        }
+
+        .button:hover {
+            transform: scale(1.05);
+            background-color: #255f3c;
+        }
+
+        .continue-button {
+            display: block;
+            margin: 30px auto;
+            text-align: center;
+        }
+
+        .continue-button img {
+            max-width: 200px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .continue-button img:hover {
+            transform: scale(1.05);
+        }
+
+        .example-box {
+            background-color: #f9f9f9;
+            border: 2px solid #ddd;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+
+        .tip {
+            background-color: #fff9e6;
+            border-left: 5px solid #ffcc00;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .tip strong {
+            color: #cc9900;
+        }
+
+        a {
+            color: #0000EE;
+            text-decoration: underline;
+        }
+
+        .chat-container {
+            max-width: 500px;
+            margin: 20px auto;
+            border: 2px solid #307e4e;
+            border-radius: 10px;
+            padding: 15px;
+            background-color: white;
+        }
+
+        .message {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+
+        .user-message {
+            background-color: #d1f2eb;
+            text-align: right;
+        }
+
+        .ai-message {
+            background-color: #e1f4e4;
+            text-align: left;
+        }
+
+        ul, ol {
+            line-height: 1.8;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                font-size: 18px;
+                padding: 10px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            .header h1 {
+                font-size: 28px;
+            }
+
+            .step h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>[Tutorial Title - Example: "How to Use [Feature Name]"]</h1>
+        </div>
+
+        <div class="step">
+            <h2>Step 1: [First Action Title]</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. This is where you would explain the first step in clear, simple language. For example: "Open your web browser and navigate to the website."</p>
+            <div class="example-box">
+                <strong>Example:</strong> You can show an example here, like typing "www.example.com" in the address bar.
+            </div>
+        </div>
+
+        <div class="step">
+            <h2>Step 2: [Second Action Title]</h2>
+            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Here you would describe the second step. Break down complex actions into simple instructions.</p>
+            <p>You might include sub-steps like:</p>
+            <ul>
+                <li>First, locate the [button/menu/field name]</li>
+                <li>Then, click or tap on it</li>
+                <li>Finally, wait for the page to load</li>
+            </ul>
+        </div>
+
+        <div class="tip">
+            <strong>Tip:</strong> This is a helpful tip box! You can use this to provide extra guidance, common mistakes to avoid, or shortcuts.
+        </div>
+
+        <div class="step">
+            <h2>Step 3: [Third Action Title]</h2>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation. This step might involve entering information. Show them what to type:</p>
+            <input type="text" class="input-field" placeholder="[Example placeholder text here]">
+            <p>After typing, you would click this button:</p>
+            <button class="button">[Button Label - e.g., "Submit" or "Continue"]</button>
+        </div>
+
+        <div class="step">
+            <h2>Step 4: [Fourth Action Title]</h2>
+            <p>Duis aute irure dolor in reprehenderit in voluptate. If your tutorial involves a conversation or chat interface, you can show it like this:</p>
+
+            <div class="chat-container">
+                <div class="message user-message">
+                    <strong>You:</strong> [Example question or input from user]
+                </div>
+                <div class="message ai-message">
+                    <strong>Response:</strong> [Example response or output that appears]
+                </div>
+            </div>
+        </div>
+
+        <div class="step">
+            <h2>Step 5: [Fifth Action Title]</h2>
+            <p>Excepteur sint occaecat cupidatat non proident. Use numbered lists for sequential actions:</p>
+            <ol>
+                <li>First, do this specific thing</li>
+                <li>Second, do this other thing</li>
+                <li>Third, verify that it worked correctly</li>
+            </ol>
+        </div>
+
+        <div class="tip">
+            <strong>Important Note:</strong> Use these yellow boxes for important warnings or critical information that users shouldn't miss!
+        </div>
+
+        <div class="step">
+            <h2>Step 6: [Sixth Action Title]</h2>
+            <p>Sunt in culpa qui officia deserunt mollit anim. This is where you might explain how to verify success or what the final result should look like.</p>
+            <p>You should now see [describe expected outcome]. If you don't see this, try [troubleshooting step].</p>
+        </div>
+
+        <div class="step">
+            <h2>Step 7: [Final Action or Summary]</h2>
+            <p>Congratulations! You've completed [tutorial topic]. Here's a quick summary of what you learned:</p>
+            <ul>
+                <li>[Key point or skill #1]</li>
+                <li>[Key point or skill #2]</li>
+                <li>[Key point or skill #3]</li>
+            </ul>
+            <p>Feel free to practice these steps as many times as you need. The more you practice, the easier it becomes!</p>
+        </div>
+
+        <div class="continue-button">
+            <p>Ready to continue to the next tutorial?</p>
+            <button class="button">[Continue to Next Lesson]</button>
+            <!-- Or use an image button like: -->
+            <!-- <img src="continue-button.png" alt="Continue" onclick="location.href='next-page.html'"> -->
+        </div>
+
+        <p style="text-align: center; margin-top: 30px;">
+            <a href="[link-to-home-or-menu]">Return to Main Menu</a> |
+            <a href="[link-to-help]">Need Help?</a>
+        </p>
+    </div>
+</body>
+</html>
