@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Factor Authentication (MFA) Tutorial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            font-size: 20px;
+        }
+
+        .header {
+            background-color: #307e4e;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 40px 50px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .note {
+            background-color: #fff9e6;
+            border-left: 5px solid #307e4e;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .intro-section {
+            margin: 25px 0;
+        }
+
+        .intro-section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 25px 0 15px 0;
+        }
+
+        .step {
+            font-weight: bold;
+            margin: 15px 0 5px 0;
+        }
+
+        ul {
+            margin: 5px 0 15px 20px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 8px 0;
+            line-height: 1.5;
+        }
+
+        .completion {
+            margin: 30px 0 20px 0;
+        }
+
+        .tip {
+            margin-left: 20px;
+            color: #555;
+        }
+
+        .button-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .continue-button {
+            display: inline-block;
+            background-color: #307e4e;
+            color: white;
+            padding: 15px 40px;
+            font-size: 28px;
+            font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .continue-button:hover {
+            background-color: #255f3c;
+        }
+
+        .link-text {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .link-text a {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .collaborators {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 18px;
+            margin-top: 15px;
+        }
+
+        .screenshot {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .screenshot-small {
+            max-width: 400px;
+            height: auto;
+            margin: 15px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .inline-icon {
+            height: 1.2em;
+            vertical-align: middle;
+            margin: 0 3px;
+        }
+
+        @media (max-width: 600px) {
+            .content {
+                padding: 20px 25px;
+            }
+
+            .header h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Multi Factor Authentication (MFA)</h1>
+        <h1>on a Desktop/Laptop</h1>
+        <div class="collaborators">Collaborators: Dylan Nelson and Taggart Vowels</div>
+    </div>
+
+    <div class="content">
+        <div class="note">
+            <strong>Note:</strong> Before you begin this tutorial, you'll need to have an authentication application on your smartphone. If you're not sure what that is or how to get one, <a href="#">click here</a>!
+        </div>
+
+        <div class="intro-section">
+            <h2>What is Multi Factor Authentication (MFA)?</h2>
+            <p>Multi-factor authentication means using two things instead of one to prove it's really you.</p>
+            <p>Here's the easiest way to think about it:</p>
+            <ul>
+                <li><strong>Step 1:</strong> You enter your password.</li>
+                <li><strong>Step 2:</strong> Your phone gives you a little code to make sure it's truly you.</li>
+            </ul>
+            <p>That's it!</p>
+            <p>It's like using <em>both</em> a key <strong>and</strong> a quick "secret code" to get into your house. Much safer, but still easy once you get the hang of it.</p>
+        </div>
+
+        <div class="section-title">💻 Mac or PC – Using a Web Browser (Chrome, Safari, Edge)</div>
+
+        <div class="step">1. Go to chatgpt.com</div>
+
+        <div class="step">2. Log into ChatGPT</div>
+        <ul>
+            <li>This will require entering your email or phone number.</li>
+            <li>If you signed up using a Google, Microsoft, or Apple account, then select the same option.</li>
+        </ul>
+
+        <div class="step">3. From the ChatGPT home page, click on your user profile in the bottom left corner.</div>
+        <img src="images/profileLocation.png" alt="User profile in bottom left corner" class="screenshot-small">
+
+        <div class="step">4. Select <img src="images/settingsLogo.png" alt="Settings" class="inline-icon"> Settings from the menu that appears.</div>
+        <img src="images/settingsLocation.png" alt="Settings menu" class="screenshot-small">
+
+        <div class="step">5. Navigate to security tab</div>
+        <ul>
+            <li>You'll see this page after selecting <img src="images/settingsLogo.png" alt="Settings" class="inline-icon"> Settings.</li>
+        </ul>
+        <img src="images/navToSecurity.jpg" alt="General settings page" class="screenshot">
+        <ul>
+            <li>Click on Security to go to the security page.</li>
+        </ul>
+        <img src="images/securityPage.png" alt="Security page" class="screenshot">
+
+        <div class="step">6. Click the button on the right side of the page next to "Authenticator App".</div>
+        <img src="images/authToggle1.png" alt="Authenticator App toggle button" style="width: 650px; height: auto; margin: 15px 0; border: 1px solid #ddd; border-radius: 5px;">
+
+        <div class="step">7. Open the authenticator app on your smart phone</div>
+        <ul>
+            <li>Follow the instructions given by ChatGPT to finish setting up multi factor authentication.</li>
+        </ul>
+        <img src="images/connectAuthApp.png" alt="Connect your authenticator app" class="screenshot-small">
+
+        <div class="completion">🎉 That's it, you're all done!</div>
+        <ul>
+            <li>You'll see the "Authenticator App" button turn blue.</li>
+        </ul>
+        <img src="images/authToggle2.png" alt="Blue toggle button" style="width: 650px; height: auto; margin: 15px 0; border: 1px solid #ddd; border-radius: 5px;">
+        <ul>
+            <li>You'll also see this email confirming you set multi factor authentication up.</li>
+        </ul>
+        <img src="images/authEmail.png" alt="Confirmation email" class="screenshot">
+
+        <div class="tip">🧡 If you need to try again, that's okay! Sometimes it takes a few tries — and that's perfectly normal.</div>
+
+        <div class="button-container">
+            <a href="https://imacomputer.org" class="continue-button">Tap here to open Ima</a>
+        </div>
+
+        <div class="link-text">
+            <a href="https://imacomputer.org">Tap here to open Ima</a>
+        </div>
+    </div>
+</body>
+</html>
